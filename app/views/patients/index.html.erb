@@ -1,0 +1,8 @@
+
+<h1>Patients Main Page</h1>
+<ul>
+<% @patient.each do |t| %>
+<li>Name: <%= t.name %>
+Number of Appointments: <%= t.number_of_appointment %></li>
+<% end %>
+</ul>

@@ -1,0 +1,8 @@
+<h1>Patient Show Page</h1>
+
+
+
+<%@patient.appointments.each do |a|%>
+<%= a.date_time_redable_formate  %>
+    <%=link_to a.doctor.name, doctor_path(a.doctor)%> <br>
+<% end %>
